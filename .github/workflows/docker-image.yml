@@ -18,3 +18,4 @@ jobs:
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}  # Optional if using blacklock.yml
           SONAR_PROJECTKEY: "csharp"
+          SONAR_HOST_URL: "https://sonar.blacklock.io"
