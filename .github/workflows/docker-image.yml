@@ -19,5 +19,5 @@ jobs:
             -e HOST_URL=${{ secrets.SONAR_HOST_URL }} \
             -e TOKEN=${{ secrets.SONAR_TOKEN }} \
             -e PROJECT_KEY=new_maven \
-            -v ${{ github.workspace }}:/app \
+            -v ${{ github.workspace }}:/github/workspace/ \
             blacklocksec/code-scanner:latest
