@@ -18,6 +18,6 @@ jobs:
           docker run --rm \
             -e HOST_URL=${{ secrets.SONAR_HOST_URL }} \
             -e TOKEN=${{ secrets.SONAR_TOKEN }} \
-            -e PROJECT_KEY=new_maven \
+            -e PROJECT_KEY=demo_test \
             -v ${{ github.workspace }}:/github/workspace/ \
             blacklocksec/code-scanner:latest
